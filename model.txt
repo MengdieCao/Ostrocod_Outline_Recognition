@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     trainingData
+Instances:    120
+Attributes:   9
+              ﻿Rotation
+              Smoothness
+              Sharpness
+              LHRatio
+              MaxLengthPos
+              TopStrokeRatio
+              BotStrokeRatio
+              TopBotRatio
+              Class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class 0 :
+24.35 + 
+[Smoothness] * 0.04 +
+[LHRatio] * 12.4 +
+[MaxLengthPos] * 14.31 +
+[BotStrokeRatio] * -49.98 +
+[TopBotRatio] * 6.04
+
+Class 1 :
+-6.29 + 
+[Smoothness] * -0.01 +
+[Sharpness] * -0.01 +
+[LHRatio] * -8.22 +
+[MaxLengthPos] * 8.12 +
+[TopStrokeRatio] * 9.37
+
+Class 2 :
+18.42 + 
+[LHRatio] * -9.08 +
+[MaxLengthPos] * -46.06 +
+[BotStrokeRatio] * 19.61
+
+Class 3 :
+17.01 + 
+[LHRatio] * 15.03 +
+[MaxLengthPos] * -10.09 +
+[TopStrokeRatio] * -23.42
+
+
+Time taken to build model: 0.13 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         111               92.5    %
+Incorrectly Classified Instances         9                7.5    %
+Kappa statistic                          0.9   
+Mean absolute error                      0.059 
+Root mean squared error                  0.1544
+Relative absolute error                 15.7219 %
+Root relative squared error             35.667  %
+Total Number of Instances              120     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.867    0.044    0.867      0.867    0.867      0.822    0.989     0.964     EC
+                 0.833    0.044    0.862      0.833    0.847      0.798    0.984     0.961     BE
+                 1.000    0.011    0.968      1.000    0.984      0.978    0.999     0.998     CN
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     L
+Weighted Avg.    0.925    0.025    0.924      0.925    0.924      0.900    0.993     0.981     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 26  4  0  0 |  a = EC
+  4 25  1  0 |  b = BE
+  0  0 30  0 |  c = CN
+  0  0  0 30 |  d = L
+
