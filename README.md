@@ -1,6 +1,6 @@
 # Ostrocod_Outline_Recognition
 
-To run the project, go to /Final Submission 
+To run the project, go to /Final Project Submission/Final Project Submission 
 Open OstracodRecognitionfFinal.html in any browser.
 To load file in the background, click on Choose File button.
 Select the .jpg file. Make sure that the file is placed in the same folder as "OstracodRecognitionfFinal.html".
